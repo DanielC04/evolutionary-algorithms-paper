@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{algpseudocode}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -6,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{natbib}
+\usepackage{float}
 
 \geometry{a4paper, margin=1in}
 
@@ -22,10 +24,11 @@
     This paper provides an introduction to evolutionary algorithms (EAs) and drift theorems, aimed at readers with little prior knowledge of these topics. Evolutionary algorithms are versatile tools for exploring large search spaces little is known about, and drift theory offers insights into their runtime behavior. The motivation and applications of EAs will be discussed, and basic concepts such as Random Local Search and the (1+1) Evolutionary Algorithm will be explained. Test functions and their role in evaluating EAs will also be covered. Finally, the paper will introduce drift theorems and their application in analyzing the efficiency and performance of evolutionary algorithms. Furthermore, a visualization tool for gaining intuitive insights into various testing functions, as well as their expected runtime, will be presented.
 \end{abstract}
 
-\tableofcontents \newpage
+\tableofcontents
+\newpage
 
 \input{introduction}
-\input{motivation}
+% \input{motivation}
 \input{basics}
 \input{drift_theorems}
 \input{conclusion}
